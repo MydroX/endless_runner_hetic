@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    public Vector3 Direction;
-    // public float Speed;
+  public Vector3 Direction;
+  // public float Speed;
 
-    private Global GlobalRef;
+  private Global GlobalRef;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        GlobalRef = GameObject.FindObjectOfType<Global>();
-    }
+  // Start is called before the first frame update
+  void Start()
+  {
+    GlobalRef = GameObject.FindObjectOfType<Global>();
+  }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Translate(GlobalRef.Speed * Direction * Time.deltaTime);
-    }
+  // Update is called once per frame
+  void Update()
+  {
+    transform.Translate(GlobalRef.Speed * Direction * Time.deltaTime);
+  }
 }

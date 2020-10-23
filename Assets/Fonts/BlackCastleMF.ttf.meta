@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 981a39c8e31384404b5b81724548455d
+guid: 735013c75192fbd41b1ac240f5668921
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Conthrax
+  fontName: BlackCastleMF
   fontNames:
-  - Conthrax
+  - BlackCastleMF
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

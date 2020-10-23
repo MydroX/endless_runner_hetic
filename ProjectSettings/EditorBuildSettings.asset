@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Lose.unity
-    guid: e8740e1f849bc420681b919a32a05699
+    path: Assets/Scenes/HomeMenu.unity
+    guid: 4314d3bb1454d4d8bb93aa8f3f368f63
   - enabled: 1
     path: Assets/Scenes/EndlessRunner.unity
     guid: 167dc464ce2424daba86b16496ce891e
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: e8740e1f849bc420681b919a32a05699
   m_configObjects: {}

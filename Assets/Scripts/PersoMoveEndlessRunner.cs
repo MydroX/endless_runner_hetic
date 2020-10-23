@@ -4,37 +4,25 @@ using UnityEngine;
 
 public class PersoMoveEndlessRunner : MonoBehaviour
 {
-    public float Speed = 1;
-    
-    Rigidbody rb;
-    
-    public float JumpFactor = 1;
-    bool IsJumping = false;
+  public float Speed = 1;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
+  Rigidbody rb;
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        float horVal = Input.GetAxis("Horizontal");
-        
-        Vector3 posArrivee = transform.position + (Vector3.right * Speed * Time.deltaTime * horVal);
-        rb.MovePosition(posArrivee);
+  public float JumpFactor = 1;
 
-        float jumpVal = Input.GetAxis("Jump");
-        if (!IsJumping && jumpVal > 0.1f) {
-            IsJumping = true;
-            rb.AddForce(Vector3.up * JumpFactor, ForceMode.VelocityChange);
-        }
+  // Start is called before the first frame update
+  void Start()
+  {
+    rb = GetComponent<Rigidbody>();
+  }
 
-    }
+  // Update is called once per frame
+  void FixedUpdate()
+  {
+    float horVal = Input.GetAxis("Horizontal");
 
-    public void HitGround() {
-        IsJumping = false;
-    }
+    Vector3 posArrivee = transform.position + (Vector3.right * Speed * Time.deltaTime * horVal);
+    rb.MovePosition(posArrivee);
 
+  }
 }

@@ -8,8 +8,6 @@ public class PersoMoveEndlessRunner : MonoBehaviour
 
   Rigidbody rb;
 
-  public float JumpFactor = 1;
-
   // Start is called before the first frame update
   void Start()
   {

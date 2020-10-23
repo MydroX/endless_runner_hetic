@@ -13,11 +13,17 @@ public class Move : MonoBehaviour
   void Start()
   {
     GlobalRef = GameObject.FindObjectOfType<Global>();
+    InvokeRepeating("SpeedUp", 0f, 30f);
   }
 
   // Update is called once per frame
   void Update()
   {
     transform.Translate(GlobalRef.Speed * Direction * Time.deltaTime);
+  }
+
+  void SpeedUp()
+  {
+    GlobalRef.Speed += (Time.deltaTime / 30);
   }
 }

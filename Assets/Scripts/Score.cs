@@ -13,6 +13,6 @@ public class Score : MonoBehaviour
   void Update()
   {
     score += Time.deltaTime;
-    scoreText.text = "SCORE : " + ((int)score).ToString();
+    scoreText.text = "TIME : " + ((int)score).ToString();
   }
 }

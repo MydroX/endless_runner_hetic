@@ -5,7 +5,6 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
   public Vector3 Direction;
-  // public float Speed;
 
   private Global GlobalRef;
 
@@ -13,7 +12,7 @@ public class Move : MonoBehaviour
   void Start()
   {
     GlobalRef = GameObject.FindObjectOfType<Global>();
-    InvokeRepeating("SpeedUp", 0f, 30f);
+    InvokeRepeating("SpeedUp", 0f, 2f);
   }
 
   // Update is called once per frame
@@ -24,6 +23,6 @@ public class Move : MonoBehaviour
 
   void SpeedUp()
   {
-    GlobalRef.Speed += (Time.deltaTime / 30);
+    GlobalRef.Speed += (Time.deltaTime / 2);
   }
 }
